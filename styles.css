@@ -1,0 +1,42 @@
+h1{
+    text-align:center;
+    font-family: cursive;
+    }
+    p{
+      text-align:center;
+    }
+    
+  body{
+    background-image:url(https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    margin:0;
+    padding:0
+    background-image:cover;
+    font-family: cursive;
+    }
+    fieldset{
+      border: none;
+      border-bottom: 3px solid #626262;
+    }
+    .survey-form{
+      
+      width: 60vw;
+      max-width: 500px;
+      min-width: 100px;
+      padding-bottom: 2em;
+    }
+    
+    a{
+      text-align: center;
+      text-decoration:#000000;
+    }
+
+    a:visited {
+      color: black;
+      text-align: center;
+    }
+    .address {
+      margin-bottom: 5px;
+    }
+    

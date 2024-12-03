@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF_8">
+    <title>Cat-Survey-Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <h1 id="title">Survey Form for cat lover</h1>
+    <p id="description">Let us know how much you care or interest in cat</p>
+    <form id="survey-form" class="survey-form">
+      <fieldset>
+      <label id="name-label" >Enter your name<input type="text" id="name" placeholder="Enter your name" required></label><br>
+        <label id="email-label">Enter your email<input type="email"id="email"  placeholder="Enter your email" required></label><br>
+      <label id="number-label">Enter your number<input id="number" type="number" min="1" max="10" placeholder="Enter your number" required ></label><br>
+  </fieldset>  
+  <fieldset>
+    <legend>Which of the following Colors and patterns does cat have? </legend>
+    <label><input type="radio" name="color-patterns" value="color-patterns" checked>Classic (blotched) tabby <label>
+      <label><input type="radio" name="color-patterns" value="color-patterns"  > Solid</label>
+      <label><input type="radio" name="color-patterns" value="color-patterns">Bicolor</label>
+      <label><input type="radio" name="color-patterns" value="color-patterns">Tricolor and Tortoiseshell</label>
+        <label><input type="radio" name="color-patterns" value="color-patterns">Colorpoint</label>
+    </fieldset>
+  <fieldset>
+    <label for="dropdown">Select type of breed: 
+    <Select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="Spotted Cat (Indian Billi)">Spotted Cat (Indian Billi)</option>
+      <option value="Bengal Cat">Bengal Cat</option>
+      <option value="Bombay Cat<">Bombay Cat</option>
+      <option value="Maine Coon<">Maine Coon</option>
+      <option value="Persian Cat">Persian Cat"</option>
+      <option value="None of above">None of above</option>
+      </select>
+      </fieldset> 
+      Vocal communication which frequently cat made?
+        <br>
+      <label for="Vocal-communication"> <input type="checkbox" name="Vocal-communication" value="Vocal-communication" id="Vocal-communication">Meowing</label>
+      <br>
+     <label for="Vocal-communication"><input type="checkbox"  name="Vocal-communication" value="Vocal-communication" id="Vocal-communication" >Purring</label>
+     <br>
+     <label for="Vocal-communication"><input type="checkbox" name="Vocal-communication" value="Vocal-communication" id="Vocal-communication">Hissing</label>
+     <br>
+     <label for="Vocal-communication"><input type="checkbox" value="Vocal-communication" name="Vocal-communication" id="Vocal-communication">Spitting</label>
+     <br>
+     <label for="Vocal-communication"><input type="checkbox"  value="Vocal-communication" name="Vocal-communication"  "id="Vocal-communication">Growling</label>
+     <br>
+     <label for="Vocal-communication"><input type="checkbox" value="Vocal-communication" name="Vocal-communication"  id="Vocal-communication">Screaming</label>
+      <br>
+     <label for="Vocal-communication"><input type="checkbox" value="Vocal-communication" name="Vocal-communication" id="Vocal-communication">Screaming</label>
+     <br>
+     <label for="Vocal-communication"><input type="checkbox" value="Vocal-communication" name="Vocal-communication" id="Vocal-communication">Mating calls</label> 
+     <br>
+     <label for="Feedback">Feedback 
+     <textarea id="Feedback" name=" feedback" placeholder="Give us feedback" cols="20" rows="5"></textarea><br>
+    
+     <input class="submit" type="submit" value="submit" id="submit">
+<footer><p><a href="https://www.freecodecamp.org" target="_blank">Visit our website</a></p></footer>
+<p class="address">THANK YOU FOR YOUR TIME AND FEEDBACK </p>
+  
+  </form>
+  </body>    
+</html>

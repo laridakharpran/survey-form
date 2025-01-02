@@ -1,64 +1,86 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF_8">
-    <title>Cat-Survey-Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Lover Survey</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   </head>
   <body>
-  <h1 id="title">Survey Form for cat lover</h1>
-    <p id="description">Let us know how much you care or interest in cat</p>
-    <form id="survey-form" class="survey-form">
-      <fieldset>
-      <label id="name-label" >Enter your name<input type="text" id="name" placeholder="Enter your name" required></label><br>
-        <label id="email-label">Enter your email<input type="email"id="email"  placeholder="Enter your email" required></label><br>
-      <label id="number-label">Enter your number<input id="number" type="number" min="1" max="10" placeholder="Enter your number" required ></label><br>
-  </fieldset>  
-  <fieldset>
-    <legend>Which of the following Colors and patterns does cat have? </legend>
-    <label><input type="radio" name="color-patterns" value="color-patterns" checked>Classic (blotched) tabby <label>
-      <label><input type="radio" name="color-patterns" value="color-patterns"  > Solid</label>
-      <label><input type="radio" name="color-patterns" value="color-patterns">Bicolor</label>
-      <label><input type="radio" name="color-patterns" value="color-patterns">Tricolor and Tortoiseshell</label>
-        <label><input type="radio" name="color-patterns" value="color-patterns">Colorpoint</label>
-    </fieldset>
-  <fieldset>
-    <label for="dropdown">Select type of breed: 
-    <Select id="dropdown">
-      <option value="">(select one)</option>
-      <option value="Spotted Cat (Indian Billi)">Spotted Cat (Indian Billi)</option>
-      <option value="Bengal Cat">Bengal Cat</option>
-      <option value="Bombay Cat<">Bombay Cat</option>
-      <option value="Maine Coon<">Maine Coon</option>
-      <option value="Persian Cat">Persian Cat"</option>
-      <option value="None of above">None of above</option>
-      </select>
-      </fieldset> 
-      Vocal communication which frequently cat made?
-        <br>
-      <label for="Vocal-communication"> <input type="checkbox" name="Vocal-communication" value="Vocal-communication" id="Vocal-communication">Meowing</label>
-      <br>
-     <label for="Vocal-communication"><input type="checkbox"  name="Vocal-communication" value="Vocal-communication" id="Vocal-communication" >Purring</label>
-     <br>
-     <label for="Vocal-communication"><input type="checkbox" name="Vocal-communication" value="Vocal-communication" id="Vocal-communication">Hissing</label>
-     <br>
-     <label for="Vocal-communication"><input type="checkbox" value="Vocal-communication" name="Vocal-communication" id="Vocal-communication">Spitting</label>
-     <br>
-     <label for="Vocal-communication"><input type="checkbox"  value="Vocal-communication" name="Vocal-communication"  "id="Vocal-communication">Growling</label>
-     <br>
-     <label for="Vocal-communication"><input type="checkbox" value="Vocal-communication" name="Vocal-communication"  id="Vocal-communication">Screaming</label>
-      <br>
-     <label for="Vocal-communication"><input type="checkbox" value="Vocal-communication" name="Vocal-communication" id="Vocal-communication">Screaming</label>
-     <br>
-     <label for="Vocal-communication"><input type="checkbox" value="Vocal-communication" name="Vocal-communication" id="Vocal-communication">Mating calls</label> 
-     <br>
-     <label for="Feedback">Feedback 
-     <textarea id="Feedback" name=" feedback" placeholder="Give us feedback" cols="20" rows="5"></textarea><br>
-    
-     <input class="submit" type="submit" value="submit" id="submit">
-<footer><p><a href="https://www.freecodecamp.org" target="_blank">Visit our website</a></p></footer>
-<p class="address">THANK YOU FOR YOUR TIME AND FEEDBACK </p>
-  
-  </form>
-  </body>    
+    <main id="survey-main">
+      <section id="survey-container">
+        <h1 id="title">🐾 Cat Lover Survey 🐾</h1>
+        <p id="description">We'd love to know more about your love for cats. Fill out this quick survey!</p>
+        <form id="survey-form">
+          <!-- Personal Information -->
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label id="name-label" for="name">Name:
+              <input type="text" id="name" placeholder="e.g., John Doe" required>
+            </label>
+            <label id="email-label" for="email">Email:
+              <input type="email" id="email" placeholder="e.g., john@example.com" required>
+            </label>
+            <label id="number-label" for="number">Rate your love for cats (1-10):
+              <input id="number" type="number" min="1" max="10" placeholder="e.g., 8" required>
+            </label>
+          </fieldset>
+
+          <!-- Cat Preferences -->
+          <fieldset>
+            <legend>Cat Preferences</legend>
+            <label for="dropdown">Favorite Breed:
+              <select id="dropdown" required>
+                <option value="" disabled selected>Select a breed</option>
+                <option value="spotted">Spotted Cat (Indian Billi)</option>
+                <option value="bengal">Bengal Cat</option>
+                <option value="bombay">Bombay Cat</option>
+                <option value="maine">Maine Coon</option>
+                <option value="persian">Persian Cat</option>
+                <option value="none">None of the above</option>
+              </select>
+            </label>
+
+            <p>Common Cat Patterns:</p>
+            <label><input type="radio" name="patterns" value="classic" checked> Classic (Blotched Tabby)</label>
+            <label><input type="radio" name="patterns" value="solid"> Solid</label>
+            <label><input type="radio" name="patterns" value="bicolor"> Bicolor</label>
+            <label><input type="radio" name="patterns" value="tricolor"> Tricolor</label>
+            <label><input type="radio" name="patterns" value="colorpoint"> Colorpoint</label>
+          </fieldset>
+
+          <!-- Cat Vocalizations -->
+          <fieldset>
+            <legend>Cat Vocalizations</legend>
+            <p>Which sounds have you heard?</p>
+            <label><input type="checkbox" name="vocal" value="meowing"> Meowing</label>
+            <label><input type="checkbox" name="vocal" value="purring"> Purring</label>
+            <label><input type="checkbox" name="vocal" value="hissing"> Hissing</label>
+            <label><input type="checkbox" name="vocal" value="spitting"> Spitting</label>
+            <label><input type="checkbox" name="vocal" value="growling"> Growling</label>
+            <label><input type="checkbox" name="vocal" value="screaming"> Screaming</label>
+            <label><input type="checkbox" name="vocal" value="mating"> Mating Calls</label>
+          </fieldset>
+
+          <!-- Feedback -->
+          <fieldset>
+            <legend>Additional Feedback</legend>
+            <label for="feedback">Your Feedback:
+              <textarea id="feedback" name="feedback" placeholder="Share your thoughts about cats..." rows="5"></textarea>
+            </label>
+          </fieldset>
+
+          <!-- Submit Button -->
+          <button type="submit" id="submit">Submit Feedback</button>
+        </form>
+      </section>
+
+      <footer>
+        <p><a href="https://www.freecodecamp.org" target="_blank">Powered by FreeCodeCamp</a></p>
+        <p>Thank you for sharing your thoughts! 🐾</p>
+      </footer>
+    </main>
+  </body>
 </html>
